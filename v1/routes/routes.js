@@ -11,7 +11,7 @@ const ProductRoutesV1 = express.Router();
 // // jobs
 
 ProductRoutesV1.route('/post_product').post(postProductV1)
-ProductRoutesV1.route('/all_product').get(getAllProductV1)
+ProductRoutesV1.route('/all_products').get(getAllProductV1)
 
 // // services
 // ServiceRoutesV2.route('/post_service').post(postService)
