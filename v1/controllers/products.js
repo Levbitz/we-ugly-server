@@ -9,6 +9,16 @@
 
 import product from "../modal/products.js";
 
+export const  getAllProductV1 =  async(req ,res)=>{
+  try {
+    const products = await product.find();
+    res.status(200).json(products);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+}
+
 
 export const postProductV1 = async (req, res) => {
   console.log(req.body);

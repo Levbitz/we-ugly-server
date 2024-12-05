@@ -1,5 +1,5 @@
 import express from 'express';
-import {postProductV1} from '../controllers/products.js'
+import {getAllProductV1, postProductV1} from '../controllers/products.js'
 
 
 const ProductRoutesV1 = express.Router();
@@ -11,6 +11,7 @@ const ProductRoutesV1 = express.Router();
 // // jobs
 
 ProductRoutesV1.route('/post_product').post(postProductV1)
+ProductRoutesV1.route('/all_product').get(getAllProductV1)
 
 // // services
 // ServiceRoutesV2.route('/post_service').post(postService)

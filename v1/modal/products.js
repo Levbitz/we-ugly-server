@@ -17,41 +17,8 @@ const weUglySchema = mongoose.Schema({
       type: Number
     },
     price: Number,
-    //"specifications": "3 In 1 Pack of Men's Cotton T-shirts",
-    description: String,
+   description: String,
     sliders:Array ,
-  
- 
-//   uid:String, 
-//   active: Boolean,
-//   category:String,
-//   title:String,
-//   userId:String,
-//   type:String,
-//   description:String,
-//   //job specific
-//   qualifications:String,
-//   exprience:String,
-//   jobType:String,
-//   skills:Array,
-//   workPlaceType:String,
-//   timeOpen:String,
-//   timeClose:String,
-//   workOnSunday:Boolean,
-//   openingTime:String,
-//   closingTime:String,
-//   servicesProvided:String,
-// isGovernmentJob:{
-//     type:Boolean,
-//     default:false
-// },
-//   address: String,
-//   country:String,
-//   state:String,
-//   city:String,
-//   town:String,
- 
-//   adID:String,
     createdAt: {
         type: Date,
         default: new Date(),

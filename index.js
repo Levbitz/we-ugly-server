@@ -24,7 +24,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-  res.send('Hello From Sumdha Info Tec!')
+  res.send('Hello From We uguly!')
 })
 
 
