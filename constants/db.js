@@ -1,6 +1,6 @@
 // const dbUrl = "mongodb+srv://weuglyteam:ZneGZNxFiuP8J1iA@cluster0.ewkatbw.mongodb.net/weUgly"
 
-const dbUrl = "mongodb+srv://pinto:pintopinto@weugly.bzvxz.mongodb.net/"
+const dbUrl = "mongodb+srv://pinto:pintopinto@weugly.bzvxz.mongodb.net/roshan"
 
 //ZneGZNxFiuP8J1iA
 //weuglyteam

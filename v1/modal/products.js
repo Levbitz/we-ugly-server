@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 const weUglySchema = mongoose.Schema({
 
  
-    title:String,
+    name:String,
     category:String,
     subCategory:String,
 
@@ -43,6 +43,6 @@ type:Boolean
 //    state:'text',
 //    city:'text',
 //    town:'text' });
-var product = mongoose.model('jireh', weUglySchema)
+var product = mongoose.model('product', weUglySchema)
 
 export default product
