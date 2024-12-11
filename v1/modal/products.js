@@ -5,12 +5,18 @@ const weUglySchema = mongoose.Schema({
 
  
     title:String,
+    category:String,
     subCategory:String,
+
     availability:Boolean,
     colors: Array,
     selectedColor: String,
     sizes: Array,
     selectedSize: String,
+    availability:{
+default:true,
+type:Boolean
+    },
     //"seller": "levbitz",
     count: {
       default: 1,

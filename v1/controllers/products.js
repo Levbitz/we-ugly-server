@@ -40,6 +40,19 @@ export const postProductV1 = async (req, res) => {
   }
 };
 
+export const deleteProductV1 = async (req, res) => {
+  try {
+    const deletedProduct = await product.findByIdAndDelete(req.params.id);
+    if (!deletedProduct) {
+      return res.status(404).json({ error: 'Product not found' });
+    }
+    res.status(200).json({ message: 'Product deleted successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
 
 // //edit Job
 

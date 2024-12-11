@@ -1,5 +1,5 @@
 import express from 'express';
-import {getAllProductV1, postProductV1} from '../controllers/products.js'
+import {getAllProductV1, postProductV1 , deleteProductV1} from '../controllers/products.js'
 
 
 const ProductRoutesV1 = express.Router();
@@ -12,6 +12,7 @@ const ProductRoutesV1 = express.Router();
 
 ProductRoutesV1.route('/post_product').post(postProductV1)
 ProductRoutesV1.route('/all_products').get(getAllProductV1)
+ProductRoutesV1.route('/delete_product/:id').delete(deleteProductV1)
 
 // // services
 // ServiceRoutesV2.route('/post_service').post(postService)
